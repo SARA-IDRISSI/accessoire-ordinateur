@@ -1,0 +1,483 @@
+@font-face {
+    font-family: "Poppins";
+    src: url(font/Poppins-Regular.ttf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+
+}
+
+/* *******************************************nav bar********************************** */
+
+header {
+    height: 100vh;
+    background-image: url(images/banner.jpg);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    /* align-items:center; */
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+
+ul li a {
+    color: white;
+    text-decoration: none;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+
+ul li {
+    padding-top: 50px;
+}
+
+li {
+    list-style: none;
+    justify-content: space-between;
+    text-transform: capitalize;
+    font-size: 20px;
+}
+
+ul li a:hover {
+    color: greenyellow;
+}
+
+li:first-child a {
+    color: greenyellow;
+}
+
+ul {
+    padding-right: 80px;
+}
+
+.logo {
+    padding-top: 30px;
+    padding-left: 50px;
+}
+
+/************** description et image qui ont dans  header *************/
+.descANDimg {
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+
+.desc {
+    width: 500px;
+    /* pourcentage  */
+    margin-right: 90px;
+}
+
+.desc h1 {
+    font-size: 70px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.desc span {
+    font-size: 40px;
+    font-weight: normal;
+}
+
+.desc p {
+    text-align: justify;
+    word-spacing: 2px;
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+
+.desc button {
+    background-color: transparent;
+    padding: 20px 60px;
+    color: white;
+    font-size: larger;
+    font-weight: bold;
+    border: 2px solid white;
+    margin-right: 20px;
+}
+
+.desc button:hover {
+    background-color: greenyellow;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+
+article.image {
+    margin-top: -40px;
+}
+
+/******************** ******************computer laptop tablet **********************************/
+
+.boxes {
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+}
+
+.box {
+    width: 25%;
+    text-align: center;
+    border: 2px solid greenyellow;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    margin-bottom: 100px;
+    padding: 40px 30px;
+}
+
+.box h3 {
+    margin: 20px;
+    font-size: 25px;
+}
+
+.ctr {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.box p {
+    text-align: center;
+    font-size: 20px;
+    line-height: 2;
+}
+
+/***************************************************our product******************************************************************/
+.container {
+    background-color: #eee;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.title h2 {
+    font-size: 40px;
+    font-weight: 900;
+    width: 300px;
+    margin: auto;
+    border-bottom: 2px solid #48ca95;
+}
+
+.product-container {
+    width: 80%;
+    margin: auto;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 20px;
+}
+
+.product {
+    width: 28%;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.product button {
+    /* width: 60%; */
+    padding: 10px 60px;
+    background-color: black;
+    color: white;
+    border: none;
+
+}
+
+.product button:hover {
+    background: #48ca95;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+
+.btn {
+    width: 20%;
+    color: #48ca95;
+    border: 2px solid #48ca95;
+    margin: auto;
+    text-align: center;
+    padding: 20px 0px;
+    background-color: white;
+    font-size: 20px;
+}
+
+.btn:hover {
+    background-color: black;
+    color: #48ca95;
+    border: 4px solid #48ca95;
+    transition: 1s;
+    -webkit-transition: 1S;
+    -moz-transition: 1S;
+    -ms-transition: 1S;
+    -o-transition: 1S;
+}
+
+.offer {
+    background-color: #4f4aa6;
+    color: white;
+}
+
+.hero-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+
+
+}
+
+.hero-right {
+    margin-left: 190px;
+}
+
+.hero-left h2 {
+    font-size: 30px;
+    font-weight: normal;
+}
+
+.hero-left h3 {
+    font-size: 70px;
+    margin: 20px 0px 20px 0px;
+}
+
+.btn-shop {
+    margin-top: 20px;
+    background-color: #48ca95;
+    color: white;
+    padding: 20px 60px;
+    border: none;
+    font-weight: bolder;
+}
+
+/* *******************************************customer review********************************** */
+
+.container-customer {
+    margin: auto;
+    width: 50%;
+}
+
+.title-customer {
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    font-size: 30px;
+
+}
+
+.title-customer h2 {
+    width: 300px;
+    margin: auto;
+    border-bottom: 2px solid #48ca95;
+}
+
+.comment span img {
+    margin-bottom: 20px;
+}
+
+.comment p {
+    padding-top: 20px;
+}
+
+.comment h3 {
+    font-size: 30px;
+}
+
+/********************************CONTACT NOW********************************************/
+.form {
+    background-image: url(images/contact_g.jpg);
+    color: white;
+    margin-top: 100px;
+    padding-bottom: 50px;
+
+
+}
+
+.title-form {
+    text-align: center;
+    padding-top: 50px;
+}
+
+.title-form h2 {
+    font-size: 40px;
+    font-weight: 900;
+    width: 200px;
+    margin: auto;
+    border-bottom: 2px solid white;
+
+}
+
+form {
+
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: auto;
+    border: 3px solid white;
+    padding: 80px 30px 50px 30px;
+    margin-top: 40px;
+
+}
+
+form input {
+
+    width: 100%;
+    height: 40px;
+    padding: 30px;
+    margin-bottom: 30px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    outline: none;
+    font-size: 20px;
+
+}
+
+input::placeholder {
+    color: white;
+
+}
+
+textarea {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    outline: none;
+    font-size: 20px;
+    margin-bottom: 30px;
+
+}
+
+textarea::placeholder {
+
+    color: white;
+    padding: 80px 30px;
+}
+
+.btn-form {
+    color: white;
+    background-color: #48ca95;
+    border: none;
+    padding: 20px 40px;
+    font-size: 20px;
+    width: 30%;
+    margin: auto;
+    border-radius: 40px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
+}
+
+/* *******************************************footer********************************** */
+
+footer {
+    background-color: black;
+    height: 70vh;
+}
+
+.columns {
+
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    color: white;
+    padding-top: 200px;
+    margin-left: 20px;
+    margin-right: 20px;
+
+}
+
+.column h3 {
+    margin-bottom: 20px;
+}
+
+.column .logo-ftr {
+    margin-top: -15px;
+    margin-bottom: 20px;
+}
+
+.column {
+    width: 20%;
+    border-bottom: 2px solid white;
+    padding-bottom: 50px;
+}
+
+.fa-brands {
+    color: white;
+    background-color: black;
+    font-size: 30px;
+    margin-left: 10px;
+
+}
+
+.column p {
+    width: 210px;
+
+    line-height: 2;
+}
+
+.column input {
+    width: 250px;
+    background-color: white;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.column input::placeholder {
+    color: darkgray;
+    font-weight: 800;
+    font-size: 20px;
+    padding-left: 10px;
+
+}
+
+.btn-ftr {
+    color: white;
+    background-color: #48ca95;
+    font-size: larger;
+    padding: 5px 20px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    text-transform: uppercase;
+}
+
+.footr {
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+}
